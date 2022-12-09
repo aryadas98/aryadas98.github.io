@@ -1,0 +1,20 @@
+:root {
+  --grey-lighter: hsl(0, 0%, 86%);
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-brand .navbar-item {
+  align-items: baseline;
+}
+
+.navbar-brand .first-name {
+  font-size: 1.3em;
+}
+
+.navbar-brand .last-name {
+  color: var(--grey-lighter);
+}

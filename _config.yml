@@ -21,8 +21,8 @@
 title: Arya Das
 email: arya@aryadas.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  I am Arya Das. I am a graduate student and Prime Minister's Research Fellow at IIT Kanpur.
-  I have keen interests in space exploration and robotics and I enjoy learning and building things.
+  I am Arya Das. I am a PhD student and PMRF Fellow at the Department of Aerospace Engineering at IIT Kanpur.
+  My interests lie broadly in the field of space exploration and robotics. I enjoy learning and building things.
 tagline: Prime Minister's Research Fellow at IIT Kanpur
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://aryadas.dev" # the base hostname & protocol for your site, e.g. http://example.com

@@ -6,14 +6,14 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
+<section class="hero" id="about">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <div class="columns">
-        <div class="column is-3">
-          <img src="/assets/me.jpg"/>
+        <div class="column is-one-third">
+          <img src="/assets/me.jpg" class="image is-256x256 is-block mx-auto"/>
         </div>
-        <div class="column is-offset-1">
+        <div class="column">
           <h1 class="title">
             Hi, I'm Arya.
           </h1>
@@ -30,7 +30,7 @@ title: Home
             <div class="buttons">
               <a class="button is-info is-outlined">
                 <span class="icon">
-                  <span class="material-icons">file_download</span>
+                  <i class="fa-solid fa-download"></i>
                 </span>
                 <span>Download CV</span>
               </a>
@@ -38,6 +38,147 @@ title: Home
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="container is-max-desktop content">
+    <h2>Experience</h2>
+    <div class="columns mb-5">
+      <div class="column is-one-third">
+        <img src="/assets/iitklogo.jpg" class="image is-128x128 is-block mx-auto"/>
+      </div>
+      <div class="column">
+        <h4>Project Associate</h4>
+        <p>Space Dynamics Laboratory<br>
+          <small>August 2021 - July 2022</small></p>
+        <p>I primarily worked on the software and simulation aspects of a 5-dof satellite simulator.</p>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-one-third">
+        <img src="/assets/ardnlogo.png" class="image is-128x128 is-block mx-auto"/>
+      </div>
+      <div class="column">
+        <h4>Google Summer of Code developer</h4>
+        <p>AerospaceResearch.Net<br>
+          <small>May 2018 - August 2018</small></p>
+        <p>In this position I worked on developing an orbit determination software.
+          First we determine a good estimate of a satellite orbit using data from multiple ground stations.
+          Next, we predict the future location and velocity of the satellite.
+          I also worked on a good GUI to visualize the results.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="container is-max-desktop content">
+    <h2>Education</h2>
+    <div class="columns mb-5">
+      <div class="column is-one-third">
+        <img src="/assets/iitklogo.jpg" class="image is-128x128 is-block mx-auto"/>
+      </div>
+      <div class="column">
+        <h4>Indian Institute of Technology, Kanpur</h4>
+        <p>Doctor of Philosophy, Aerospace Engineering (Flight Mechanics and Control)<br>
+          <small>August 2022 - Present</small></p>
+        <p>I am pursuing my PhD in Aerospace Engineering in the Flight Mechanics and Control domain.
+          I am a receipient of the PMRF Fellowship through Direct Channel.</p>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-one-third">
+        <img src="/assets/iitplogo.jpg" class="image is-128x128 is-block mx-auto"/>
+      </div>
+      <div class="column">
+        <h4>Indian Institute of Technology, Patna</h4>
+        <p>Bachelor of Technology, Computer Science and Engineering<br>
+          <small>August 2017 - May 2021</small></p>
+        <p>I had studied computer science at IITP with a focus on robotics.
+          I had participated in numerous activities, societies and projects at university.
+          I was one of the coordinators of NJACK (computer science club).
+          I helped organize classes and club events. I was a team member of the Robocon team.
+          I had also participated in the Inter IIT Tech Meet every year.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="container is-max-desktop content">
+    <h2 id="skills">Skills</h2>
+			<div class="columns">
+				<div class="column">
+					<h5>Programming Languages:</h5>
+					<ul>
+						<li>Python</li>
+						<li>C++</li>
+						<li>Java</li>
+						<li>Javascript</li>
+					</ul>
+				</div>
+				<div class="column">
+					<h5>Tools and Packages</h5>
+					<ul>
+						<li>OpenCV</li>
+						<li>ROS</li>
+						<li>NumPy</li>
+						<li>Tensorflow</li>
+						<li>MATLAB</li>
+						<li>Simulink</li>
+					</ul>
+				</div>
+				<div class="column">
+					<h5>Others:</h5>
+					<ul>
+						<li>Web Development</li>
+						<li>Android Development</li>
+						<li>Orbital Mechanics</li>
+					</ul>
+				</div>
+			</div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container is-max-desktop content">
+    <h2>Contact</h2>
+    <div class="buttons">
+
+      <a class="button" href="https://www.linkedin.com/in/aryadas98/" target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </span>
+        <span>aryadas98</span>
+      </a>
+
+      <a class="button" href="https://github.com/aryadas98/" target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+          <i class="fa-brands fa-github"></i>
+        </span>
+        <span>aryadas98</span>
+      </a>
+
+      <a class="button" href="https://twitter.com/aryadas98" target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+          <i class="fa-brands fa-twitter"></i>
+        </span>
+        <span>aryadas98</span>
+      </a>
+
+      <a class="button" href="mailto:arya@aryadas.dev" target="_blank" rel="nofollow noopener noreferrer">
+        <span class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+        <span>arya@aryadas.dev</span>
+      </a>
+    
     </div>
   </div>
 </section>

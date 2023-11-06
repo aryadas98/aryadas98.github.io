@@ -6,7 +6,7 @@ layout: default
 title: Home
 ---
 
-<section class="hero" id="about">
+<section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns">
@@ -32,13 +32,85 @@ title: Home
                 <span class="icon">
                   <i class="fa-solid fa-download"></i>
                 </span>
-                <span>Download CV</span>
+                <span>Download CV (PDF)</span>
               </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section" id="research">
+  <div class="container is-max-desktop content">
+    <h2>Research</h2>
+    <p>In recent years, there has been a significant increase in lunar exploration missions, driven by the efforts of governments,
+      private companies, and international collaborations. The Moon has garnered substantial attention due to its potential as a 
+      stepping stone for deep space exploration and a source of valuable resources. Nations such as India, Russia, the United States, 
+      and China have been actively pursuing lunar missions, and initiatives like NASA's Artemis and the Lunar Gateway highlight the 
+      global effort to establish a sustainable presence on the Moon.</p>
+
+    <p>The complexity of planning lunar missions lies in the intricate gravitational forces of the Earth, Moon, and Sun, which lack 
+      a closed-form analytical solution beyond the classical two-body problem. To design more intricate and fuel-efficient trajectories, 
+      the Circular Restricted Three-Body Problem (CR3BP) is a valuable model. In this model, three bodies are considered: two massive ones, 
+      like the Earth and Moon, in fixed circular orbits, and one massless body, such as a satellite, moving within their gravitational field. 
+      Despite lacking an analytical solution, the CR3BP offers better insights into lunar orbits, leading to the identification of unique 
+      orbits like the Near-Rectilinear Halo Orbit (NRHO). The NRHO is of strategic importance, especially for NASA's Lunar Gateway project, 
+      as it provides continuous access to the lunar surface, facilitating scientific research, resource exploration, and serving as a hub 
+      for future lunar and deep space missions.</p>
+    
+    <div class="columns">
+      <div class="column">
+        <figure>
+          <img src="/assets/research1.jpg" style="height:250px;"/>
+          <figcaption>Fig 1: Gravitational Field and Lagrange Points in the CR3BP model</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure>
+          <img src="/assets/research2.jpg" style="height:250px;"/>
+          <figcaption>Fig 2: The 4 possible 9:2 NRHO Orbits in the Earth Moon system</figcaption>
+        </figure>
+      </div>
+    </div>
+    
+    <p>The trajectory design for lunar missions and station-keeping is a complex challenge, 
+      particularly when using low-thrust propulsion systems. This requires the use of numerical optimization methods such as multiple
+      shooting. However, it is difficult to find good initial estimates for these methods. Without a good initial estimate, these algorithms
+      will take a long time to converge, or might converge at a local extremum. Recently, Artifical Neural Networks have emerged as a
+      good tool for solving difficult non-linear problems. Hence my research topic is on <b>"Machine-Learning based Methods for Trajectory 
+      Design of Low-Thrust Spacecraft in Cis-Lunar Space"</b>. This fusion of numerical methods and machine learning techniques 
+      offers a promising approach for addressing the intricacies of lunar mission planning and execution.</p>
+
+  </div>
+</section>
+
+<section class="section" id="publications">
+  <div class="container is-max-desktop content">
+    <h2>Publications</h2>
+    <ul>
+      <li>P. Dubey, <b>A. Das</b>, D.K. Giri <i>"Bald Eagle Search Optimization based Bioinspired Spacecraft Rendezvous- Docking and Space Debris Mitigation"</i> International Astronautical Congress 2022, Paris, France</li>
+      <li>V. Saini, <b>A. Das</b>, C. Sikarwar, P. Dubey, D. K. Giri <i>"Design and Development of Spacecraft Simulator Testbed: Platform for Validating Maneuvering Control Strategies in Frictionless Environment"</i> International Astronautical Congress 2022, Paris, France</li>
+      <li><b>A. Das</b>, R. Halder, A. Thakur <i>"Deep Reinforcement Learning-Based 3D Exploration with a Wall Climbing Robot"</i> IEEE TENCON 2021, Auckland, New Zealand</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="teaching">
+  <div class="container is-max-desktop content">
+    <h2>Teaching</h2>
+    <p>As part of my PMRF responsibilities, I perform teaching duties every semester outside my institute. These TA duties have been summarized in the table below:</p>
+
+    <table class="table">
+      <thead><tr><th>Time Period</th> <th>Organization</th> <th>Duration</th> <th>Details</th></tr></thead>
+      <tbody>
+        <tr> <td>Jan'23 - Apr'23</td> <td>NPTEL</td> <td>24 hrs</td> <td>Conducted Q&A sessions for the NPTEL course "Programming in Modern C++"</td></tr>
+        <tr> <td>Jan'23 - Apr'23</td> <td>CSJM University</td> <td>30 hrs</td> <td>Conducted a workshop on LaTeX</td></tr>
+        <tr> <td>Jul'23 - Sep'23</td> <td>NPTEL</td> <td>24 hrs</td> <td>Conducted Q&A sessions for the NPTEL course "Programming in Modern C++"</td></tr>
+      </tbody>
+    </table>
+
   </div>
 </section>
 
@@ -53,7 +125,9 @@ title: Home
         <h4>Project Associate</h4>
         <p>Space Dynamics Laboratory<br>
           <small>August 2021 - July 2022</small></p>
-        <p>I primarily worked on the software and simulation aspects of a 5-dof satellite simulator.</p>
+        <p>I worked at the Space Dynamics and Flight Control Laboratory under Dr. Dipak Kumar Giri.
+          My work consisted of developing a 5-dof frictionless satellite simulator.
+          I primarily worked on the software and simulation aspect of the project.</p>
       </div>
     </div>
 
@@ -75,7 +149,7 @@ title: Home
   </div>
 </section>
 
-<section class="section" id="education">
+<section class="section">
   <div class="container is-max-desktop content">
     <h2>Education</h2>
     <div class="columns mb-5">
@@ -88,6 +162,9 @@ title: Home
           <small>August 2022 - Present</small></p>
         <p>I am pursuing my PhD in Aerospace Engineering in the Flight Mechanics and Control domain.
           I am a receipient of the PMRF Fellowship through Direct Channel.</p>
+        
+        <p><b>Key courses:</b> Flight Stability & Control, Non-linear & Adaptive Control, Space Dynamics-I,
+          Embedded & Cyber Physical Systems, Introduction to Machine Learning, Introduction to Robotics.</p>
       </div>
     </div>
 
@@ -104,13 +181,16 @@ title: Home
           I was one of the coordinators of NJACK (computer science club).
           I helped organize classes and club events. I was a team member of the Robocon team.
           I had also participated in the Inter IIT Tech Meet every year.</p>
+
+        <p><b>Key courses:</b> Deep Learning, Bio-Inspired Robotics, Algorithms, Data Structures, Databases, 
+          Operating Systems, Computer Networks, Computer Architecture, Computer Security</p>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="section" id="skills">
+<section class="section">
   <div class="container is-max-desktop content">
     <h2>Skills</h2>
 			<div class="columns">
@@ -172,11 +252,11 @@ title: Home
         <span>aryadas98</span>
       </a>
 
-      <a class="button" href="mailto:arya@aryadas.dev" target="_blank" rel="nofollow noopener noreferrer">
+      <a class="button" href="mailto:aryadas98@gmail.com" target="_blank" rel="nofollow noopener noreferrer">
         <span class="icon">
           <i class="fa-solid fa-envelope"></i>
         </span>
-        <span>arya@aryadas.dev</span>
+        <span>aryadas98@gmail.com</span>
       </a>
     
     </div>
